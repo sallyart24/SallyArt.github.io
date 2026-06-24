@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Art Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f9;
+}
+
+header {
+  background: linear-gradient(90deg,#ff4ecd,#7c5cff);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>My Art Gallery</h1>
+  <p>Original artwork by me</p>
+</header>
+
+<div class="gallery">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400">
+    <h3>Artwork Title</h3>
+    <p>$100</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/400">
+    <h3>Artwork Title</h3>
+    <p>$150</p>
+  </div>
+
+</div>
+
+</body>
+</html>
